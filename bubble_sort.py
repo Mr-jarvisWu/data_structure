@@ -1,5 +1,6 @@
 def bubble_sort(alist):
     """冒泡排序"""
+    """冒泡排序是稳定性排序"""
     n = len(alist)
     for i in range(0, n-1):  # 循环n-1遍 i [0,1,2...n-2]
         count = 0

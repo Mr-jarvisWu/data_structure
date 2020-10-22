@@ -1,5 +1,6 @@
 def select_sort(alist):
     """选择排序"""
+    """选择排序稳定性不稳定，例如考虑最大值时，相同元素的顺序会被改变"""
     n = len(alist)
     for j in range(0, n-1):  # 遍历整个列表
         min_index = j    # 将第j个元素看做最小的
