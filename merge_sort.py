@@ -1,6 +1,9 @@
 def merge_sort(alist):
     """归并排序
-    归并排序不改变原列表"""
+    归并排序不改变原列表,而是重新生成一个列表
+    最优时间复杂度和最坏时间复杂度都是 O(nlogn)
+    是稳定性排序
+    """
     n = len(alist)
     if n == 1:
         return alist
@@ -10,7 +13,7 @@ def merge_sort(alist):
 
     # 合并两个有序集合
     left, right = 0, 0
-    merge_sort_li = []   # 将合并后的列表生成一个新列表
+    merge_sort_li = []  # 将合并后的列表生成一个新列表
 
     left_n = len(left_sorted_li)
     right_n = len(right_sorted_li)
@@ -28,9 +31,9 @@ def merge_sort(alist):
 
     return merge_sort_li
 
+
 if __name__ == '__main__':
-    alist = [2,5,91,38,45,1,9,0,10]
+    alist = [2, 5, 91, 38, 45, 1, 9, 0, 10]
     print(alist)
     print(merge_sort(alist))
     print(alist)
-
